@@ -1,5 +1,6 @@
 import 'package:dbee/Brands/model_breads.dart';
 import 'package:dbee/Home/awal_page.dart';
+import 'package:dbee/brandview/brandsview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -58,48 +59,15 @@ class Breands extends StatelessWidget {
         mainAxisSpacing: 10,
         crossAxisCount: 6,
         children: <Widget>[
-          Container(
-            padding: const EdgeInsets.all(8),
-            child: SvgPicture.asset('assets/images/abb.svg',
-                semanticsLabel: 'sbb'),
-            color: Colors.transparent,
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            child: SvgPicture.asset('assets/images/asco.svg',
+          IconButton(
+            onPressed: () {
+              Get.off(BrandsView());
+            },
+            icon: SvgPicture.asset('assets/images/asco.svg',
                 semanticsLabel: 'asco'),
-            color: Colors.transparent,
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            child: SvgPicture.asset(
-              'assets/images/lincoln-electric-1.svg',
-              semanticsLabel: 'knorr',
-            ),
-            color: Colors.transparent,
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            child: SvgPicture.asset(
-              'assets/images/bosch.svg',
-              semanticsLabel: 'bosch',
-            ),
-            color: Colors.transparent,
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            child: SvgPicture.asset('assets/images/festo.svg',
-                semanticsLabel: 'festo'),
-            color: Colors.transparent,
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            child: SvgPicture.asset('assets/images/graco.svg',
-                semanticsLabel: 'graco'),
-            color: Colors.transparent,
-          ),
+          )
           /*  ===================== */
-          Container(
+          /*  Container(
             padding: const EdgeInsets.all(8),
             child: SvgPicture.asset('assets/images/abb.svg',
                 semanticsLabel: 'sbb'),
@@ -138,7 +106,7 @@ class Breands extends StatelessWidget {
             child: SvgPicture.asset('assets/images/graco.svg',
                 semanticsLabel: 'graco'),
             color: Colors.transparent,
-          ),
+          ), */
         ],
       ),
     );
