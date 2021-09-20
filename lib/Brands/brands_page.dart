@@ -61,7 +61,7 @@ class Breands extends StatelessWidget {
         children: <Widget>[
           IconButton(
             onPressed: () {
-              Get.off(BrandsView());
+              Get.off(BrandView());
             },
             icon: SvgPicture.asset('assets/images/asco.svg',
                 semanticsLabel: 'asco'),
