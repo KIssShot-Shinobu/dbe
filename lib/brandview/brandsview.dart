@@ -1,40 +1,59 @@
+import 'package:dbee/Brands/brands_page.dart';
+import 'package:dbee/Home/awal_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-class BrandsView extends StatelessWidget {
-  const BrandsView({Key? key}) : super(key: key);
+class BrandView extends StatelessWidget {
+  const BrandView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          const SliverAppBar(
-            pinned: true,
-            snap: false,
-            floating: true,
-            expandedHeight: 160.0,
-            flexibleSpace: FlexibleSpaceBar(
-              centerTitle: true,
-              title: Text('SliverAppBar'),
-            ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(Get.height * 0.13),
+        child: AppBar(
+          backgroundColor: Color(0xFF516CC5),
+          flexibleSpace: SizedBox(
+            height: Get.height * 0.8,
           ),
-          const SliverToBoxAdapter(
-            child: SizedBox(
-              height: 20,
+          centerTitle: true,
+          title: Text("Daya Bakti Energi"),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: Row(
+                children: [
+                  TextButton(
+                      onPressed: () {
+                        Get.off(HalamanAwal());
+                      },
+                      child: Text(
+                        "Home",
+                        style: TextStyle(color: Color(0xFFF5F5F5)),
+                      )),
+                  TextButton(
+                      onPressed: () {
+                        Get.off((Breands()));
+                      },
+                      child: Text(
+                        "Brands",
+                        style: TextStyle(color: Color(0xFFF5F5F5)),
+                      )),
+                  TextButton(
+                      onPressed: () {
+                        Get.to(Breands());
+                      },
+                      child: Text(
+                        "Contact",
+                        style: TextStyle(color: Color(0xFFF5F5F5)),
+                      )),
+                ],
+              ),
             ),
-          ),
-          Container(
-            child: Row(
-              children: [
-                Card(child: Image.network("https://dbpersada.com/piwigo/upload/2021/09/20/20210920092043-bf9b9994.jpg"),)
-              ],
-            ),
-          )
-          
-        ],
+          ],
+        ),
       ),
+      body: Container(child: Row(children: [Image.asset("assets/images/coba.jpg")],),),
     );
   }
 }
