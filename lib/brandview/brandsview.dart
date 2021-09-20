@@ -10,12 +10,12 @@ class BrandsView extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          SliverAppBar(
+          const SliverAppBar(
             pinned: true,
             snap: false,
             floating: true,
             expandedHeight: 160.0,
-            flexibleSpace: const FlexibleSpaceBar(
+            flexibleSpace: FlexibleSpaceBar(
               centerTitle: true,
               title: Text('SliverAppBar'),
             ),
@@ -25,59 +25,14 @@ class BrandsView extends StatelessWidget {
               height: 20,
             ),
           ),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index) {
-                return Container(
-                  color: index.isOdd ? Colors.white : Colors.black12,
-                  child: Card(
-                    clipBehavior: Clip.antiAlias,
-                    child: Column(
-                      children: [
-                        ListTile(
-                          leading: Icon(Icons.arrow_drop_down_circle),
-                          title: const Text('Card title 1'),
-                          subtitle: Text(
-                            'Secondary Text',
-                            style:
-                                TextStyle(color: Colors.black.withOpacity(0.6)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Text(
-                            'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-                            style:
-                                TextStyle(color: Colors.black.withOpacity(0.6)),
-                          ),
-                        ),
-                        ButtonBar(
-                          alignment: MainAxisAlignment.start,
-                          children: [
-                            TextButton(
-                              onPressed: () {
-                                // Perform some action
-                              },
-                              child: const Text('ACTION 1'),
-                            ),
-                            TextButton(
-                              onPressed: () {
-                                // Perform some action
-                              },
-                              child: const Text('ACTION 2'),
-                            ),
-                          ],
-                        ),
-                        Image.asset('assets/bosch/tools/GBG 35-15 PROFESSIONAL - DOUBLE-WHEELED BENCH GRINDER.jpg'),
-                        Image.asset('assets/card-sample-image-2.jpg'),
-                      ],
-                    ),
-                  ),
-                );
-              },
-              childCount: 20
+          Container(
+            child: Row(
+              children: [
+                Card(child: Image.network("https://dbpersada.com/piwigo/upload/2021/09/20/20210920092043-bf9b9994.jpg"),)
+              ],
             ),
-          ),
+          )
+          
         ],
       ),
     );
