@@ -1,5 +1,6 @@
 import 'package:dbee/Brands/brands_page.dart';
 import 'package:dbee/Home/awal_page.dart';
+import 'package:dbee/brandview/bosch.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -54,95 +55,9 @@ class BrandView extends StatelessWidget {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.only(right: 20, left: 20,top: 10),
-        height: Get.height * 0.5,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Card(
-              child: Column(
-                textBaseline: TextBaseline.alphabetic,
-                verticalDirection: VerticalDirection.down,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                      "assets/bosch/tools/Angle_grinders_&_metalworking/GBG 35-15 PROFESSIONAL - DOUBLE-WHEELED BENCH GRINDER.jpg"),
-                  Title(color: Colors.black, child: Text("nama")),
-                  Text("Deskripsi")
-                ],
-              ),
-            ),
-            Card(
-              child: Column(
-                textBaseline: TextBaseline.alphabetic,
-                verticalDirection: VerticalDirection.down,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                      "assets/bosch/tools/Angle_grinders_&_metalworking/GBG 60-20 PROFESSIONAL - DOUBLE-WHEELED BENCH GRINDER.jpg"),
-                  Title(color: Colors.black, child: Text("nama")),
-                  Text("Deskripsi")
-                ],
-              ),
-            ),
-
-            Card(
-              child: Column(
-                textBaseline: TextBaseline.alphabetic,
-                verticalDirection: VerticalDirection.down,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                      "assets/bosch/tools/Angle_grinders_&_metalworking/GCD 12 JL PROFESSIONAL - METAL CUT-OFF SAW.jpg"),
-                  Title(color: Colors.black, child: Text("nama")),
-                  Text("Deskripsi")
-                ],
-              ),
-            ),
-
-            Card(
-              child: Column(
-                textBaseline: TextBaseline.alphabetic,
-                verticalDirection: VerticalDirection.down,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                      "assets/bosch/tools/Angle_grinders_&_metalworking/GCO 14-24 J PROFESSIONAL - METAL CUT-OFF SAW.jpg"),
-                  Title(color: Colors.black, child: Text("nama")),
-                  Text("Deskripsi")
-                ],
-              ),
-            ),
-
-            Card(
-              child: Column(
-                textBaseline: TextBaseline.alphabetic,
-                verticalDirection: VerticalDirection.down,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                      "assets/bosch/tools/Angle_grinders_&_metalworking/GGS 28 C PROFESSIONAL - STRAIGHT GRINDER.jpg"),
-                  Title(color: Colors.black, child: Text("nama")),
-                  Text("Deskripsi")
-                ],
-              ),
-            ),
-
-            Card(
-              child: Column(
-                textBaseline: TextBaseline.alphabetic,
-                verticalDirection: VerticalDirection.down,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                      "assets/bosch/tools/Angle_grinders_&_metalworking/GGS 28 LC PROFESSIONAL - STRAIGHT GRINDER.jpg"),
-                  Title(color: Colors.black, child: Text("nama")),
-                  Text("Deskripsi")
-                ],
-              ),
-            ),
-          ],
-        ),
+        padding: EdgeInsets.only(right: 20, left: 20, top: 10),
+        height: Get.height * 0.9,
+        child:  BoshcViews(),
       ),
     );
   }
