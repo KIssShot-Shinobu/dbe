@@ -1,6 +1,7 @@
 import 'package:dbee/Brands/brands_page.dart';
 import 'package:dbee/Home/awal_page.dart';
 import 'package:dbee/brandview/bosch.dart';
+import 'package:dbee/brandview/bosch2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -57,7 +58,7 @@ class BrandView extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.only(right: 20, left: 20, top: 10),
         height: Get.height * 0.9,
-        child:  BoshcViews(),
+        child:  BoshcViews2(),
       ),
     );
   }

@@ -1,18 +1,29 @@
+import 'dart:convert';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-final List<String> boschList = [
-  'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
-  'assets/bosch/tools/Angle_grinders_&_metalworking/SAW.jpg',
-  'assets/bosch/tools/Angle_grinders_&_metalworking/SAW.jpg',
-  'assets/bosch/tools/Angle_grinders_&_metalworking/SAW.jpg',
-  'assets/bosch/tools/Angle_grinders_&_metalworking/SAW.jpg',
-  'assets/bosch/tools/Angle_grinders_&_metalworking/SAW.jpg',
-  'assets/bosch/tools/Angle_grinders_&_metalworking/SAW.jpg',
+List<Bosch> boschs = [
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
+      '1',
+      '2'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'bb',
+      'bbb'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'cc',
+      'ccc'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'dd',
+      'ddd')
 ];
 
-final List<Widget> boschView = boschList
+final List<Widget> boschView = boschs
     .map((item) => Container(
           margin: EdgeInsets.all(5.0),
           child: ClipRRect(
@@ -23,9 +34,9 @@ final List<Widget> boschView = boschList
                 verticalDirection: VerticalDirection.down,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(item),
-                  Title(color: Colors.black, child: Text("nama")),
-                  Text("Deskripsi")
+                  Image.asset(item.img),
+                  Title(color: Colors.black, child: Text(item.nama)),
+                  Text(item.Deks)
                 ],
               ),
             ),
@@ -33,8 +44,16 @@ final List<Widget> boschView = boschList
         ))
     .toList();
 
-class BoshcViews extends StatelessWidget {
-  const BoshcViews({Key? key}) : super(key: key);
+class Bosch {
+  final String img;
+  final String nama;
+  final String Deks;
+
+  Bosch(this.img, this.nama, this.Deks);
+}
+
+class BoshcViews2 extends StatelessWidget {
+  const BoshcViews2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +61,7 @@ class BoshcViews extends StatelessWidget {
       child: GridView.count(
           childAspectRatio: (Get.width * 0.4 / Get.height * 0.9),
           crossAxisCount: 6,
-          children: boschList
+          children: boschs
               .map((item) => Container(
                     margin: EdgeInsets.all(5.0),
                     child: ClipRRect(
@@ -53,9 +72,9 @@ class BoshcViews extends StatelessWidget {
                           verticalDirection: VerticalDirection.down,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset(item),
-                            Title(color: Colors.black, child: Text("nama")),
-                            Text("Deskripsi")
+                            Image.asset(item.img),
+                            Title(color: Colors.black, child: Text(item.nama)),
+                            Text(item.Deks)
                           ],
                         ),
                       ),
