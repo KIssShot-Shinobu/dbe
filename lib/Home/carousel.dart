@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 final List<String> imgList = [
   'assets/images/1.jpg',
-  'https://wallpaperboat.com/wp-content/uploads/2020/06/03/42361/aesthetic-anime-01-920x518.jpg',
+  'assets/images/2.jpg',
 ];
 
 final List<Widget> imageSliders = imgList
