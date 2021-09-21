@@ -66,8 +66,8 @@ class Breands extends StatelessWidget {
             onPressed: () {
               Get.off(BrandView());
             },
-            icon: SvgPicture.asset('assets/images/asco.svg',
-                semanticsLabel: 'asco'),
+            icon: SvgPicture.asset('assets/images/bosch.svg',
+                semanticsLabel: 'bosch'),
           )
           /*  ===================== */
           /*  Container(
