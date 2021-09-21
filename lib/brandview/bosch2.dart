@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 List<Bosch> boschs = [
-  Bosch(
+  /*  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
       '1',
       '2'),
@@ -20,161 +20,148 @@ List<Bosch> boschs = [
   Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
       'dd',
-      'ddd'),
-      /* =========== */
-            Bosch(
+      'ddd'), */
+  /* =========== */
+  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GBG 35-15 PROFESSIONAL - DOUBLE-WHEELED BENCH GRINDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
+      'GBG 35-15 PROFESSIONAL ',
+      'DOUBLE-WHEELED BENCH GRINDER'),
+  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GBG 60-20 PROFESSIONAL - DOUBLE-WHEELED BENCH GRINDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
+      'GBG 60-20 PROFESSIONAL',
+      'DOUBLE-WHEELED BENCH GRINDER'),
+  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GCD 12 JL PROFESSIONAL - METAL CUT-OFF SAW.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
+      'GCD 12 JL PROFESSIONAL',
+      'METAL CUT-OFF SAW'),
+  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GCO 14-24 J PROFESSIONAL - METAL CUT-OFF SAW.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDGGS 28 C PROFESSIONAL - STRAIGHT GRINDERER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
+      'GCO 14-24 J PROFESSIONAL',
+      'METAL CUT-OFF SAW'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GGS 28 C PROFESSIONAL - STRAIGHT GRINDER.jpg',
+      'GGS 28 C PROFESSIONAL',
+      'STRAIGHT GRINDER'),
+  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GGS 28 LC PROFESSIONAL - STRAIGHT GRINDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
+      'GGS 28 LC PROFESSIONAL',
+      'STRAIGHT GRINDER'),
+  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GGS 3000 L PROFESSIONAL - STRAIGHT GRINDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
+      'GGS 3000 L PROFESSIONAL',
+      'STRAIGHT GRINDER'),
+  Bosch(
       'assets/bosch/tools/Angle_grinders_&_metalworking/GGS 5000 L PROFESSIONAL - STRAIGHT GRINDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDEGNA 2,0 PROFESSIONAL - NIBBLERR.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINGPO 12 CE PROFESSIONAL - POLISHERDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINGPO 950 PROFESSIONAL - POLISHERDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRIGSC 2,8 PROFESSIONAL - SHEARNDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINGWS 6-100 PROFESSIONAL - ANGLE GRINDERDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINGWS 8-100 C PROFESSIONAL - ANGLE GRINDERDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINGWS 8-100 CE PROFESSIONAL - ANGLE GRINDERDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRIGWS 8-100 Z PROFESSIONAL - ANGLE GRINDERNDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRIGWS 9-100 P PROFESSIONAL - ANGLE GRINDERNDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINGWS 12V-76 PROFESSIONAL - CORDLESS ANGLE GRINDERDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRIGWS 13-125 CI PROFESSIONAL - ANGLE GRINDERNDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRIGWS 17-125 CI PROFESSIONAL - ANGLE GRINDERNDER.jpg',
-      'cc',
-      'ccc'),
-       Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDGWS 17-150 CI PROFESSIONAL - ANGLE GRINDERERNDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDEGWS 18 V-LI PROFESSIONAL - CORDLESS ANGLE GRINDERRNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDEGWS 18-125 L PROFESSIONAL - ANGLE GRINDERRNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDGWS 18V-10 PROFESSIONAL - CORDLESS ANGLE GRINDERERNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRIGWS 18V-15 SC PROFESSIONAL - CORDLESS ANGLE GRINDER BITURBONDERNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDERGWS 20-180 PROFESSIONAL - ANGLE GRINDERNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDERNGWS 20-230 PROFESSIONAL - ANGLE GRINDERDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDGWS 060 PROFESSIONAL - ANGLE GRINDERERNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDGWS 750-100 PROFESSIONAL - ANGLE GRINDERERNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDERGWS 900-100 PROFESSIONAL - ANGLE GRINDERNDER.jpg',
-      'cc',
-      'ccc'),
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDEGWS 900-100 S PROFESSIONAL - ANGLE GRINDERRNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDERGWS 2200 PROFESSIONAL - ANGLE GRINDERNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDEGWX 9-125 S PROFESSIONAL - ANGLE GRINDER WITH X-LOCKRNDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDERNGWX 14-125 PROFESSIONAL - ANGLE GRINDER WITH X-LOCKDER.jpg',
-      'cc',
-      'ccc'),
-      
-      Bosch(
-      'assets/bosch/tools/Angle_grinders_&_metalworking/GRINDGWX 18V-10 SC PROFESSIONAL - CORDLESS ANGLE GRINDER WITH X-LOCKERNDER.jpg',
-      'cc',
-      'ccc'),
-      
+      'GGS 5000 L PROFESSIONAL',
+      'STRAIGHT GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GNA 2,0 PROFESSIONAL - NIBBLER.jpg',
+      'GNA 2,0 PROFESSIONAL',
+      'NIBBLER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GPO 12 CE PROFESSIONAL - POLISHER.jpg',
+      'GPO 12 CE PROFESSIONAL',
+      'POLISHER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GPO 950 PROFESSIONAL - POLISHER.jpg',
+      'GPO 950 PROFESSIONAL',
+      'POLISHER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GSC 2,8 PROFESSIONAL - SHEAR.jpg',
+      'GSC 2,8 PROFESSIONAL',
+      'SHEAR'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 6-100 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 6-100 PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 8-100 C PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 8-100 C PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 8-100 CE PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 8-100 CE PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 8-100 Z PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 8-100 Z PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 9-100 P PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 9-100 P PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 12V-76 PROFESSIONAL - CORDLESS ANGLE GRINDER.jpg',
+      'GWS 12V-76 PROFESSIONAL',
+      'CORDLESS ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 13-125 CI PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 13-125 CI PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 17-125 CI PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 17-125 CI PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 17-150 CI PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 17-150 CI PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 18 V-LI PROFESSIONAL - CORDLESS ANGLE GRINDER.jpg',
+      'GWS 18 V-LI PROFESSIONAL',
+      'CORDLESS ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 18-125 L PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 18-125 L PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 18V-10 PROFESSIONAL - CORDLESS ANGLE GRINDER.jpg',
+      'GWS 18V-10 PROFESSIONAL',
+      'CORDLESS ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 18V-15 SC PROFESSIONAL - CORDLESS ANGLE GRINDER BITURBO.jpg',
+      'GWS 18V-15 SC PROFESSIONAL',
+      'CORDLESS ANGLE GRINDER BITURBO'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 20-180 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 20-180 PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 20-230 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 20-230 PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 060 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 060 PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 750-100 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 750-100 PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 900-100 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 900-100 PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 900-100 S PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 900-100 S PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWS 2200 PROFESSIONAL - ANGLE GRINDER.jpg',
+      'GWS 2200 PROFESSIONAL',
+      'ANGLE GRINDER'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWX 9-125 S PROFESSIONAL - ANGLE GRINDER WITH X-LOCK.jpg',
+      'GWX 9-125 S PROFESSIONAL',
+      'ANGLE GRINDER WITH X-LOCK'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWX 14-125 PROFESSIONAL - ANGLE GRINDER WITH X-LOCK.jpg',
+      'GWX 14-125 PROFESSIONAL',
+      'ANGLE GRINDER WITH X-LOCK'),
+  Bosch(
+      'assets/bosch/tools/Angle_grinders_&_metalworking/GWX 18V-10 SC PROFESSIONAL - CORDLESS ANGLE GRINDER WITH X-LOCK.jpg',
+      'GWX 18V-10 SC PROFESSIONAL',
+      'CORDLESS ANGLE GRINDER WITH X-LOCK'),
 ];
 
 final List<Widget> boschView = boschs
@@ -188,8 +175,19 @@ final List<Widget> boschView = boschs
                 verticalDirection: VerticalDirection.down,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(item.img),
-                  Title(color: Colors.black, child: Text(item.nama)),
+                  Image.asset(
+                    item.img,
+                    height: 30,
+                    width: 30,
+                  ),
+                  Title(
+                      color: Colors.black,
+                      child: Text(
+                        item.nama,
+                        style: TextStyle(
+                          fontSize: 30,
+                        ),
+                      )),
                   Text(item.Deks)
                 ],
               ),
